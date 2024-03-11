@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Barang</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/all.js"></script>
+    <script src="https://kit.fontawesome.com/8e23404ed8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+      .slider {
+        height: auto;
+        position: relative;
+        width: 450px;
+      }
+      .buttons{
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;    
+      }
+      .list-a{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        width: max-content;
+      }
+
+      .list-a img{
+        height: 350px;
+        width: 350px;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="fcontainer">
+      <nav class="navbar">
+        <div class="brand"><a href="homepage.html" class="namaBrand">NamaWebsite</a></div>
+        <ul class="navigation">
+            <li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="detail-container">
+    <div class="slider">
+      <div class="list-a">
+        <div class="item">
+          <img src="image/barang/barang.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/barang/barang1.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/barang/barang2.jpeg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/barang/barang3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/barang/barang4.jpg" alt="">
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"> < </button>
+        <button id="next">></button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li class="active"></li>
+        <li class="active"></li>
+        <li class="active"></li>
+        <li class="active"></li>
+      </ul>
+    </div>
+    <div class="detail-keterangan">
+        <h2>Sandal Jepit Pria Astec V2 Arei Outdoorgear</h2>
+        <h5>Rp 119.000</h5>
+        <p class="size">Size</p>
+        <br>
+        <form action="homepage.html">
+            <input type="radio" id="option1" name="option" value="39" class="radio" required>
+            <label for="option1" class="label label-1" for="option1">39</label>
+
+            <input type="radio" id="option2" name="option" value="40" class="radio" required>
+            <label for="option2" class="label label-2" for="option1">40</label>
+
+            <input type="radio" id="option3" name="option" value="41" class="radio" required>
+            <label for="option3" class="label label-3" for="option1">41</label>
+
+            <input type="radio" id="option4" name="option" value="42" class="radio" required>
+            <label for="option4" class="label label-4" for="option1">42</label>
+            
+            <input type="radio" id="option5" name="option" value="43" class="radio" required>
+            <label for="option5" class="label label-5" for="option1">43</label>
+            
+            <input type="radio" id="option6" name="option" value="44" class="radio" required>
+            <label for="option6" class="label label-6" for="option1">44</label>
+            <br>
+            <br/>
+            <div class="jumlah">
+              <span class="minus">-</span>
+              <span class="num">1</span>
+              <span class="plus">+</span>
+            </div>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+        <br>
+        <p>Sandal Jepit Astec cocok digunakan untuk kegiatan sehari hari dan traveling</p>
+    </div>
+  </div>
+  <div class="keterangan">
+    <h1>Produk Terkait</h1>
+  </div>
+  <div class="produk-container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <img src="image/barang/sandal1.jpeg" alt="">
+                <p>Sandal Jepit Pria Astec V2 Arei Outdoorgear</p>
+                <p>Rp. 119.000</p>
+                <a href="detail_barang.html" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="image/barang/sandal1.jpeg" alt="">
+                <p>Sandal Jepit Pria Astec V2 Arei Outdoorgear</p>
+                <p>Rp. 119.000</p>
+                <a href="detail_barang.html" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="image/barang/sandal1.jpeg" alt="">
+                <p>Sandal Jepit Pria Astec V2 Arei Outdoorgear</p>
+                <p>Rp. 119.000</p>
+                <a href="detail_barang.html" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="image/barang/sandal1.jpeg" alt="">
+                <p>Sandal Jepit Pria Astec V2 Arei Outdoorgear</p>
+                <p>Rp. 119.000</p>
+                <a href="detail_barang.html" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+    </div>
+  </div>
+      <footer>
+        <div class="footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4> Follow Us!</h4>
+              <div class="social-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Layanan</h4>
+              <ul>
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Metode Pembayaran</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontak Media</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div>
+                <h4>Jelajahi</h4>
+                <ul>
+                  <li><a href="#">Kontak Media</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Kebiajakan Privasi</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Toko</h4>
+              <ul>
+                <li><a href="#">Tagihan & Top Up</a></li>
+                <li><a href="#">Jual Beli</a></li>
+                <li><a href="#">COD</a></li>
+                <li><a href="#">Pusat Edukasi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        let list = document.querySelector('.slider .list-a');
+        let items = document.querySelectorAll('.slider .list-a .item');
+        let dots = document.querySelectorAll('.slider .dots li');
+        let prev = document.getElementById('prev');
+        let next = document.getElementById('next');
+        let active = 0;
+        let lengthItems = items.length - 1;
+
+        next.onclick = function(){
+            if(active + 1 > lengthItems){
+                active = 0;
+            }else{
+                active = active + 1;
+            }
+            reloadSlider();
+        }
+        prev.onclick = function(){
+            if(active - 1 < 0){
+                active = lengthItems;
+            }else{
+                active = active - 1;
+            }
+            reloadSlider();
+        }
+        let refreshSlider = setInterval(()=> {next.click()},3000);
+        function reloadSlider(){
+            let checkLeft = items[active].offsetLeft;
+            list.style.left = -checkLeft + 'px';
+            let lastActiveDot = document.querySelector('.slider .dots li.active');
+            lastActiveDot.classList.remove('active');
+            dots[active].classList.add('active');
+            clearInterval(refreshSlider);
+            refreshSlider = setInterval(()=>{next.click()},3000);
+        }
+        dots.forEach((li, key) => {
+            li.addEventListener('click', function(){
+                active = key;
+                reloadSlider();
+            })
+        })
+
+        const plus = document.querySelector('.plus');
+        const minus = document.querySelector('.minus');
+        const num = document.querySelector('.num');
+
+        let a = 1;
+        plus.addEventListener("click", ()=>{
+          a++;
+          a = (a < 10) ?  + a : a;
+          num.innerText = a;
+          console.log("a");
+        });
+
+        minus.addEventListener("click", ()=>{
+          if(a > 1){
+            a--;
+            a = (a < 10) ? + a : a;
+            num.innerText = a;
+          }
+        })
+      </script>
+</body>
+</html>

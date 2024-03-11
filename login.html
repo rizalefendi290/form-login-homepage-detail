@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/all.js"></script>
+  <script src="https://kit.fontawesome.com/8e23404ed8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="fcontainer">
+      <nav class="navbar">
+        <div class="brand"><a href="#" class="namaBrand">NamaWebsite</a></div>
+        <ul class="navigation">
+            <li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+            <li><a href="login.html" >Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <br>
+  
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Selamat Datang</div>
+    <div class="title signup">Form Registrasi</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Daftar</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="homepage.html" class="login">
+        <pre>
+        </pre>
+        <div class="field">
+          <input type="text" placeholder="Masukan Email " required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Masukan Password" required>
+        </div>
+        <div class="pass-link"><a href="#">Lupa password?</a></div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Buat akun <a href="">Daftar sekarang</a></div>
+      </form>
+      <form action="#" class="signup">
+        <div class="field">
+          <input type="text" placeholder="Masukan Nama" required>
+        </div>
+        <div class="field">
+          <input type="text" placeholder="Masukan Email" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Masukan Password" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Ulangi password" required>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Daftar">
+        </div>
+        <div class="signup-link">Sudah punya akun? <a href="">Login</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+      <footer>
+        <div class="footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4> Follow Us!</h4>
+              <div class="social-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Layanan</h4>
+              <ul>
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Metode Pembayaran</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontak Media</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div>
+                <h4>Jelajahi</h4>
+                <ul>
+                  <li><a href="#">Kontak Media</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Kebiajakan Privasi</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Toko</h4>
+              <ul>
+                <li><a href="#">Tagihan & Top Up</a></li>
+                <li><a href="#">Jual Beli</a></li>
+                <li><a href="#">COD</a></li>
+                <li><a href="#">Pusat Edukasi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const loginText = document.querySelector("title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const daftarBtn = document.querySelector("label.signup");
+        const daftarLink = document.querySelector("form.signup-link a");
+        daftarBtn.onclick=(()=>{
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick=(()=>{
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+        daftarLink.onclick=(()=>{
+          daftarBtn.click();
+          return false;
+        })
+      </script>
+</body>
+</html>
